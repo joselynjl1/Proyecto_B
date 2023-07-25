@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Proyecto_B</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tituloCongreso">I CONGRESO INTERNACIONAL</string>
+    <string name="textoHome">La Universidad Nacional del Santa (UNS) anuncia la realización del I Congreso Internacional de Ingeniería, Sociedad y Desarrollo Sostenible. Es para nosotros especialmente relevante por muchos motivos. Hace 23 años realizamos aquí en Bilbao el II Congreso Nacional. Fue un congreso de una sociedad muy joven que buscaba transmitir conocimientos y experiencias que pudieran ayudar a la promoción y a la salud mental de los niños y adolescentes.¡Inscripciones abiertas!</string>
+    <string name="nombreExpositora1">Dalia Gallardo Ramirez</string>
+    <string name="textoInicio">#UNSTeCapacita | La Universidad Nacional del Santa (UNS) anuncia la realización del I Congreso Internacional de Ingeniería, Sociedad y Desarrollo Sostenible. ¡Inscripciones abiertas!</string>
+    <string name="tituloInicio">I CONGRESO INTERNACIONAL DE INGENIERÍA, SOCIEDAD Y DESARROLLO SOSTENIBLE</string>
+</resources>

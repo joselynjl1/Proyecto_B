@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Inicio"
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/NAVHomeFragment">
+    </item>
+
+    <item
+        android:title="Expositores"
+        android:icon="@drawable/baseline_supervised_user_circle_24"
+        android:id="@+id/NAVExpositoresFragment">
+    </item>
+
+    <item
+        android:title="Programación"
+        android:icon="@drawable/baseline_calendar_month_24"
+        android:id="@+id/NAVProgramacionFragment">
+    </item>
+
+    <item
+        android:title="Ubicación"
+        android:icon="@drawable/baseline_map_24"
+        android:id="@+id/NAVUbicacionFragment">
+    </item>
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/NAVHomeFragment">
+
+    <fragment
+        android:id="@+id/NAVHomeFragment"
+        android:name="com.example.proyecto_b.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_expositoresFragment"
+            app:destination="@id/NAVProgramacionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NAVProgramacionFragment"
+        android:name="com.example.proyecto_b.ui.fragments.CalendarioFragment"
+        android:label="fragment_calendario"
+        tools:layout="@layout/fragment_calendario" >
+        <action
+            android:id="@+id/action_calendarioFragment_to_ubicacionFragment"
+            app:destination="@id/NAVExpositoresFragment" />
+        <action
+            android:id="@+id/action_NAVProgramacionFragment_to_FragmentoDetalleDialogoCalendario"
+            app:destination="@id/FragmentoDetalleDialogoCalendario" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NAVExpositoresFragment"
+        android:name="com.example.proyecto_b.ui.fragments.ExpositoresFragment"
+        android:label="fragment_expositores"
+        tools:layout="@layout/fragment_expositores" >
+        <action
+            android:id="@+id/action_expositoresFragment_to_calendarioFragment"
+            app:destination="@id/NAVUbicacionFragment" />
+        <action
+            android:id="@+id/action_NAVExpositoresFragment_to_FragmentoDetalleDialogoExpositor"
+            app:destination="@id/FragmentoDetalleDialogoExpositor" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NAVUbicacionFragment"
+        android:name="com.example.proyecto_b.ui.fragments.UbicacionFragment"
+        android:label="fragment_ubicacion"
+        tools:layout="@layout/fragment_ubicacion" >
+        <action
+            android:id="@+id/action_NAVUbicacionFragment_to_FragmentoDetalleDialogoUbicacion"
+            app:destination="@id/FragmentoDetalleDialogoUbicacion" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/FragmentoDetalleDialogoCalendario"
+        android:name="com.example.proyecto_b.ui.fragments.CalendarioDetalleDialogFragment"
+        android:label="FragmentoDetalleDialogoCalendario"
+        tools:layout="@layout/fragment_calendario_detalle_dialog">
+    </dialog>
+
+    <dialog
+        android:id="@+id/FragmentoDetalleDialogoExpositor"
+        android:name="com.example.proyecto_b.ui.fragments.ExpositoresDetalleDialogFragment"
+        android:label="FragmentoDetalleDialogoExpositor"
+        tools:layout="@layout/fragment_expositores_detalle_dialog">
+    </dialog>
+
+    <dialog
+        android:id="@+id/FragmentoDetalleDialogoUbicacion"
+        android:name="com.example.proyecto_b.ui.fragments.UbicacionDetalleDialogFragment"
+        android:label="FragmentoDetalleDialogoExpositor"
+        tools:layout="@layout/fragment_ubicacion_detalle_dialog">
+    </dialog>
+
+</navigation>

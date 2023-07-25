@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="AltoToolBar">50dp</dimen>
+    <dimen name="tamanioTitulo">20sp</dimen>
+    <dimen name="tamanioTextoRV">18sp</dimen>
+    <dimen name="tamanioAMPM">15sp</dimen>
+</resources>
